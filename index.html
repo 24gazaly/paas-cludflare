@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3ed" />
+    <title>Ruang Rasa — Mood harianmu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#atas" aria-label="Ruang Rasa, ke beranda">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>ruang<span class="brand-light">rasa</span></span>
+        </a>
+        <span class="top-note"><span class="live-dot" aria-hidden="true"></span> Ruang kecil untuk dirimu</span>
+      </header>
+
+      <section class="hero" id="atas" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> JEDA SEJENAK</p>
+          <h1 id="hero-title">Apa kabar<br />perasaanmu <span>hari ini?</span></h1>
+          <p class="intro">Nggak perlu buru-buru mencari jawaban. Pilih rasa yang paling dekat denganmu sekarang—semua perasaan boleh hadir.</p>
+        </div>
+        <div class="sun-art" aria-hidden="true">
+          <div class="sun-orbit orbit-one"></div><div class="sun-orbit orbit-two"></div>
+          <div class="sun-disc"><span>☼</span></div>
+          <span class="spark spark-a">✳</span><span class="spark spark-b">·</span>
+          <span class="art-caption">tarik napas<br />pelan-pelan</span>
+        </div>
+      </section>
+
+      <section class="mood-section" aria-labelledby="mood-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">CEK SUASANA HATIMU</p><h2 id="mood-title">Hari ini aku merasa…</h2></div>
+          <span class="step-label"><span>01</span> / 02</span>
+        </div>
+        <div class="mood-grid" role="group" aria-label="Pilih suasana hatimu">
+          <button class="mood-card" type="button" data-mood="senang" aria-pressed="false"><span class="mood-emoji">😊</span><span class="mood-name">Senang</span><span class="mood-hint">ringan & cerah</span></button>
+          <button class="mood-card" type="button" data-mood="tenang" aria-pressed="false"><span class="mood-emoji">😌</span><span class="mood-name">Tenang</span><span class="mood-hint">adem & cukup</span></button>
+          <button class="mood-card" type="button" data-mood="lelah" aria-pressed="false"><span class="mood-emoji">😮‍💨</span><span class="mood-name">Lelah</span><span class="mood-hint">butuh jeda</span></button>
+          <button class="mood-card" type="button" data-mood="cemas" aria-pressed="false"><span class="mood-emoji">🥺</span><span class="mood-name">Cemas</span><span class="mood-hint">pikiran ramai</span></button>
+          <button class="mood-card" type="button" data-mood="semangat" aria-pressed="false"><span class="mood-emoji">⚡</span><span class="mood-name">Semangat</span><span class="mood-hint">siap melangkah</span></button>
+        </div>
+      </section>
+
+      <section class="result-card" id="hasil" aria-live="polite" aria-atomic="true" hidden>
+        <div class="result-decoration" aria-hidden="true"></div>
+        <div class="result-inner">
+          <div class="result-icon" id="result-icon" aria-hidden="true">🌿</div>
+          <div class="result-copy">
+            <p class="eyebrow" id="result-eyebrow">CATATAN KECIL UNTUKMU</p>
+            <h2 id="result-title"></h2>
+            <p id="result-message"></p>
+            <div class="suggestion"><span class="suggestion-label">COBA SEKARANG</span><span id="result-suggestion"></span></div>
+          </div>
+          <button class="reset-button" id="reset-button" type="button" aria-label="Pilih mood lain">↻</button>
+        </div>
+      </section>
+
+      <footer class="footer"><span>Dibuat dengan <span class="heart">♥</span> untuk hari-hari yang beragam.</span><span class="footer-right">Kamu nggak harus merasa baik-baik saja setiap saat.</span></footer>
+    </main>
+  </body>
+</html>
